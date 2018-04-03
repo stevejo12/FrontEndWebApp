@@ -1,0 +1,22 @@
+html,body{
+  height:100%;
+  margin:0px;
+  padding:0px;
+}
+#mainpage{
+  height: 97vh;
+}
+#header{
+  width: 100%;
+  height: 20%;
+}
+
+#home{
+  width: 100%;
+  min-height: 60%;
+}
+
+#footer{
+  width: 100%;
+  height: 15%;
+}

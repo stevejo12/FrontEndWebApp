@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Login Page</title>
+</head>
+<body>
+  <form (submit)="loginValidate()">
+    <h2>Login Page</h2><br>
+    Username: <input type="text" name="name" [(ngModel)]= "formData.username" placeholder="username"> <br>
+    Password: <input type="password" [(ngModel)]= "formData.password" name="password" placeholder="password..."> <br>
+    <input type="submit" value="Login">
+  </form>
+
+</body>
+</html>
