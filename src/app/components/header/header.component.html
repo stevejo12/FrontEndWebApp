@@ -5,13 +5,14 @@
     <title></title>
   </head>
   <body>
-  <div>
-    <img src="{{sideBar}}" class="imgEdit" href="">
-    <div class="txtEdit">
-      <h1><a href="/">Hotel Mayor</a></h1>
-    </div>
-
+  <div id="tag">
+    <h2>Hotel Mayor</h2>
   </div>
+  <div class="sidebar" *ngIf="getLogin()"><a href="/editProfile">Edit Profile</a></div>
+  <div class="sidebar" *ngIf="!getLogin()"><a href="/login">Login</a></div>
+  <div class="sidebar" *ngIf="!getLogin()"><a href="/" (click)="logout()">Logout</a></div>
+  <div class="sidebar" *ngIf="getLogin()"><a href="/register">Register</a></div>
+
 
 
   </body>

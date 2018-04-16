@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DatahandleService} from '../../datahandle.service';
+import { HeaderComponent} from '../header/header.component';
 
 
 @Component({
@@ -11,14 +12,16 @@ import { DatahandleService} from '../../datahandle.service';
 export class LoginComponent implements OnInit {
 
   public formData: any = {};
-  constructor(private router: Router, private user: DatahandleService ) { }
+  constructor(private router: Router, private user: DatahandleService, private userHeader: HeaderComponent ) { }
 
   ngOnInit() {
   }
 
   loginValidate() {
     this.user.checkSignIn(this.formData).subscribe(() => {
-        this.router.navigateByUrl('/')
+      this.user.checkAuth();
+      this.userHeader.setLogin();
+      this.router.navigateByUrl('/');
       },
       err => {
         alert('Login Unsuccessful');

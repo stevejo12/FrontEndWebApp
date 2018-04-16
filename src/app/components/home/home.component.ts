@@ -16,19 +16,19 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  searchProcess(e){
-    var loc = e.target.elements[0].value;
-    var date = e.target.elements[1].value;
-    this.user.logoutUser();
-    console.log(this.user.getUserLoggedIn());
-    if ( this.user.getUserLoggedIn() ) {
-      alert("Success");
-      return false;
-    }
-
-    return false;
-
-  }
+  // searchProcess(e){
+  //   var loc = e.target.elements[0].value;
+  //   var date = e.target.elements[1].value;
+  //   this.user.logoutUser();
+  //   console.log(this.user.getUserLoggedIn());
+  //   if ( this.user.getUserLoggedIn() ) {
+  //     alert('Success');
+  //     return false;
+  //   }
+  //
+  //   return false;
+  //
+  // }
 
 
 }

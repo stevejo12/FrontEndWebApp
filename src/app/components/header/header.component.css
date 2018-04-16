@@ -1,8 +1,18 @@
 body{
   margin: 10px;
+  background-image: url('../../../assets/img/background.jpg');
 }
 div{
   height: 20vh;
+  float: left;
+}
+
+#tag{
+  width: 80%;
+}
+
+.sidebar{
+  width: 10%;
 }
 
 .txtEdit{

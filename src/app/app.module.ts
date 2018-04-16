@@ -14,6 +14,8 @@ import { SearchResultComponent } from './components/search-result/search-result.
 import {DatahandleService} from './datahandle.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+
 
 
 @NgModule({
@@ -31,9 +33,10 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BsDatepickerModule
   ],
-  providers: [DatahandleService],
+  providers: [DatahandleService, LoginComponent, HeaderComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
