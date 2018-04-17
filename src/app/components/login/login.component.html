@@ -7,8 +7,8 @@
 <body>
   <form (submit)="loginValidate()">
     <h2>Login Page</h2><br>
-    Email: <input type="text" name="name" [(ngModel)]= "formData.email" placeholder="Email"> <br>
-    Password: <input type="password" [(ngModel)]= "formData.password" name="password" placeholder="password..."> <br>
+    Email: <input type="text" name="name" [(ngModel)]= "formData.email" placeholder="Email" value=""> <br>
+    Password: <input type="password" [(ngModel)]= "formData.password" name="password" placeholder="password..." value=""> <br>
     <input type="submit" value="Login">
   </form>
 

@@ -9,7 +9,7 @@ import { DatahandleService } from '../../datahandle.service';
 export class HeaderComponent implements OnInit {
   // public myImage = 'assets/img/background.jpg';
 
-  private loggedIn: boolean;
+  public loggedIn: boolean;
 
   constructor(private userHandle: DatahandleService) { }
 

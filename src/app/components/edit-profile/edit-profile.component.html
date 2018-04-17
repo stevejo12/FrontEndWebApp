@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <div class="lnr"></div>
+  <div id="edit">
+    <form (submit)="editProfile()">
+      <table>
+        <tr>
+          <th colspan="2">Your Profile</th>
+        </tr>
+        <tr>
+          <td>Name: </td>
+          <td><input type="text" [(ngModel)]="edit.name" name="name"></td>
+        </tr>
+        <tr>
+          <td>Email: </td>
+          <td><input type="email" [(ngModel)]="edit.email" name="email"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <div class="lnr"></div>
+
+
+
+
+</body>
+</html>

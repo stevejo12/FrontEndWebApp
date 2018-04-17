@@ -15,7 +15,7 @@ import {DatahandleService} from './datahandle.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
-
+import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 
 
 @NgModule({
@@ -27,7 +27,8 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     LoginComponent,
     ContactUsComponent,
     RegisterComponent,
-    SearchResultComponent
+    SearchResultComponent,
+    EditProfileComponent
   ],
   imports: [
     BrowserModule,

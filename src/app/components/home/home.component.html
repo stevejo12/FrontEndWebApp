@@ -3,15 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="home.js"></script>
   </head>
   <body>
-    <form>
-      <div><h3>Search...</h3></div>
-      <div><input type="text" name="location" placeholder="Jakarta"></div>
-      <div><input type="date" name="date" data-provide="datepicker"></div>
-      <input type="submit" value="Search...">
-    </form>
+    <!--<form (submit)="searchProcess()">-->
+      <!--<div><h3>Search...</h3></div>-->
+      <!--&lt;!&ndash;<div><input type="text" name="location" placeholder="Jakarta"></div>&ndash;&gt;-->
+      <!--<input type="search-bar-input" [(ngModel)]="search.location" name="search">-->
+      <!--<div><input type="date" name="date" data-provide="datepicker" [(ngModel)]="search.date"></div>-->
+      <!--<input type="submit" value="Search...">-->
+    <!--</form>-->
+
+  <!--<ng-ais-instantsearch-->
+    <!--[config]="{-->
+      <!--apikey: '6c4ea95b984a31285c85716d00e3b4a5',-->
+      <!--apiID: 'SHTAHB9M2H',-->
+      <!--indexName: 'hotel',-->
+      <!--urlSync: true-->
+    <!--}"-->
+  <!--&gt;-->
+    <!--<ng-ais-search-box></ng-ais-search-box>-->
+  <!--</ng-ais-instantsearch>-->
+
+  <div id="search-box">
+
+  </div>
+
+  <div id="hits">
+
+  </div>
 
 
   </body>

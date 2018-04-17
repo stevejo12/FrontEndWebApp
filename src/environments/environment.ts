@@ -4,5 +4,11 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  algolia: {
+    appId: 'SHTAHB9M2H',
+    apiKey: '6c4ea95b984a31285c85716d00e3b4a5',
+    indexName: 'hotel',
+    urlSync: false,
+  }
 };
