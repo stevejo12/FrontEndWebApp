@@ -9,6 +9,6 @@ export const environment = {
     appId: 'SHTAHB9M2H',
     apiKey: '6c4ea95b984a31285c85716d00e3b4a5',
     indexName: 'hotel',
-    urlSync: false,
+    urlSync: false
   }
 };

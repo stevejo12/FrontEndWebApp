@@ -35,8 +35,8 @@ export class LoginComponent implements OnInit {
 
   loginValidate() {
     this.user.checkSignIn(this.formData).subscribe(
-      () => this.router.navigateByUrl('/'),
-      (error) => { alert(error) ; console.log('error here') }
+      () => { this.router.navigateByUrl('/'); },
+      (error) => { alert(error) ; console.log('error here'); }
     );
   }
 

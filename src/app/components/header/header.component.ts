@@ -9,24 +9,24 @@ import { DatahandleService } from '../../datahandle.service';
 export class HeaderComponent implements OnInit {
   // public myImage = 'assets/img/background.jpg';
 
-  public loggedIn: boolean;
+  loggedIn: boolean;
 
   constructor(private userHandle: DatahandleService) { }
 
   ngOnInit() {
+    this.checkLogged();
   }
 
-  setLogin() {
-    this.loggedIn = true;
-  }
-
-  getLogin() {
-    return this.loggedIn;
+  checkLogged() {
+    if ( localStorage.getItem('token') ) {
+      this.loggedIn = true;
+    } else {
+      this.loggedIn = false;
+    }
   }
 
   logout() {
     this.userHandle.logout();
-    this.loggedIn = this.userHandle.getLoggedIn();
   }
 
 

@@ -6,6 +6,7 @@ import {ContactUsComponent} from './components/contact-us/contact-us.component';
 import {RegisterComponent} from './components/register/register.component';
 import {SearchResultComponent} from './components/search-result/search-result.component';
 import {EditProfileComponent} from './components/edit-profile/edit-profile.component';
+import { HotelprofileComponent } from './components/hotelprofile/hotelprofile.component';
 
 
 const appRoutes: Routes = [
@@ -28,6 +29,10 @@ const appRoutes: Routes = [
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: 'hotelprofile/:id',
+    component: HotelprofileComponent
   },
   {
     path: 'editProfile',

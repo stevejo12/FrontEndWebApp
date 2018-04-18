@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { DatahandleService} from '../../datahandle.service';
-import { NgAisModule } from 'angular-instantsearch';
 import { environment } from '../../../environments/environment';
 
-import * as instantsearch from 'instantsearch.js';
+// import * as instantsearch from 'instantsearch.js';
+import instantsearch from 'instantsearch.js/dist-es5-module/src/lib/main';
+
 
 
 
@@ -29,23 +28,24 @@ export class HomeComponent implements OnInit {
         container: '#search-box',
         autofocus: false,
         placeholder: 'Hotel Location',
-        poweredBy: false
+        poweredBy: true
       })
     );
-    //
-    // // initialize hits widget
-    // this.search.addWidget(
-    //   instantsearch.widgets.hits({
-    //     container: '#hits',
-    //     templates: {
-    //       empty: 'No results',
-    //       item: `<img src=https://image.tmdb.org/t/p/w300{{image_path}} width="50px">
-    //             <strong>Result {{objectID}}</strong>:
-    //             {{{_highlightResult.name.value}}}`
-    //     },
-    //     escapeHits: true
-    //   })
-    // );
+
+    // initialize hits widget
+    this.search.addWidget(
+      instantsearch.widgets.hits({
+        container: '#hits',
+        templates: {
+          empty: 'No results',
+          item: `
+                  <a href="/hotelprofile/{{{id}}}"><img src="assets/img/background.jpg" width="50px" height="60px">
+                  <strong>Result {{id}}:</strong>
+                  {{hotelName}}</a>`
+        },
+        escapeHits: true
+      })
+    );
     this.search.start();
   }
   ngOnInit() {

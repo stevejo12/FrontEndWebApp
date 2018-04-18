@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
+import { HotelprofileComponent } from './components/hotelprofile/hotelprofile.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { EditProfileComponent } from './components/edit-profile/edit-profile.com
     ContactUsComponent,
     RegisterComponent,
     SearchResultComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    HotelprofileComponent
   ],
   imports: [
     BrowserModule,
